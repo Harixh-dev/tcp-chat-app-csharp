@@ -4,10 +4,12 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-namespace Chatbot
+namespace ChatClientApp
 {
     public class ChatServer
     {
+        static readonly object consoleLock = new object();
+
         static void Main()
         {
             TcpListener server = new TcpListener(IPAddress.Any, 5000);
@@ -31,7 +33,12 @@ namespace Chatbot
             {
                 int bytesRead = stream.Read(buffer, 0, buffer.Length);
                 if (bytesRead == 0) break;
-                Console.WriteLine("Client: " + Encoding.UTF8.GetString(buffer, 0, bytesRead));
+                string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                lock (consoleLock)
+                {
+                    Console.WriteLine($"\nClient: {message}");
+                    Console.Write("> ");
+                }
             }
         }
 
@@ -39,6 +46,7 @@ namespace Chatbot
         {
             while (true)
             {
+                Console.Write("> ");
                 string message = Console.ReadLine();
                 byte[] buffer = Encoding.UTF8.GetBytes(message);
                 stream.Write(buffer, 0, buffer.Length);

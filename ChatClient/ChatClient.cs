@@ -7,6 +7,8 @@ namespace Chatbot
 {
     public class ChatClient
     {
+        static readonly object consoleLock = new object();
+
         static void Main()
         {
             TcpClient client = new TcpClient("127.0.0.1", 5000);
@@ -26,7 +28,12 @@ namespace Chatbot
             {
                 int bytesRead = stream.Read(buffer, 0, buffer.Length);
                 if (bytesRead == 0) break;
-                Console.WriteLine("Server: " + Encoding.UTF8.GetString(buffer, 0, bytesRead));
+                string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                lock (consoleLock)
+                {
+                    Console.WriteLine($"\nServer: {message}");
+                    Console.Write("> ");
+                }
             }
         }
 
@@ -34,6 +41,7 @@ namespace Chatbot
         {
             while (true)
             {
+                Console.Write("> ");
                 string message = Console.ReadLine();
                 byte[] buffer = Encoding.UTF8.GetBytes(message);
                 stream.Write(buffer, 0, buffer.Length);

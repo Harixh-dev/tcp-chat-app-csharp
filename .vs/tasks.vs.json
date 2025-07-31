@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-ChatServer",
+      "appliesTo": "ChatServer/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-ChatClient",
+      "appliesTo": "ChatClient/",
+      "type": "launch"
+    }
+  ]
+}

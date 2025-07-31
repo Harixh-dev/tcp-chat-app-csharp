@@ -1,0 +1,15 @@
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\bin\Debug\net6.0\ChatClient.exe
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\bin\Debug\net6.0\ChatClient.deps.json
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\bin\Debug\net6.0\ChatClient.runtimeconfig.json
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\bin\Debug\net6.0\ChatClient.dll
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\bin\Debug\net6.0\ChatClient.pdb
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ChatClient.AssemblyInfoInputs.cache
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ChatClient.AssemblyInfo.cs
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ChatClient.sourcelink.json
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ChatClient.dll
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\refint\ChatClient.dll
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ChatClient.pdb
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ChatClient.genruntimeconfig.cache
+C:\Users\hhari\tcp-chat-app-csharp\ChatClient\obj\Debug\net6.0\ref\ChatClient.dll
