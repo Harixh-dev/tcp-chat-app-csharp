@@ -6,7 +6,16 @@ A simple console-based TCP chat application using C# and .NET. It demonstrates h
 
 ## 📁 Project Structure
 
-<pre> ``` tcp-chat-app-csharp/ ├── TcpChatApp.sln ├── ChatServer/ │ ├── ChatServer.cs │ └── ChatServer.csproj └── ChatClient/ ├── ChatClient.cs └── ChatClient.csproj ``` </pre>
+```
+tcp-chat-app-csharp/
+├── TcpChatApp.sln
+├── ChatServer/
+│   ├── ChatServer.cs
+│   └── ChatServer.csproj
+└── ChatClient/
+    ├── ChatClient.cs
+    └── ChatClient.csproj
+```
 
 ---
 
