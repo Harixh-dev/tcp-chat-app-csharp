@@ -1,0 +1,39 @@
+
+# Ignore build results
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore Visual Studio folders
+.vs/
+.vscode/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore test results
+TestResults/
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.pdb
+
+# Ignore logs
+*.log
+
+# Ignore database files
+*.db
+*.db-shm
+*.db-wal
+
+# Ignore JetBrains & Rider config
+.idea/
+
+# Ignore any leftover temp files
+*.tmp
+*.bak
